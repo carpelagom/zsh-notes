@@ -44,7 +44,7 @@ function --notes-pick-fzf
 {
 	emulate -L zsh
 	command fzf --read0 --ansi \
-		--preview="/home/aperez/devel/lowtty/lowtty '$(notes-home)'/{}.md" \
+		--preview="bat --color=always '$(notes-home)'/{}.md" \
 		--layout=reverse --inline-info --prompt='(notes) ' \
 		--preview-window=down:hidden \
 		--bind=tab:toggle-preview \
